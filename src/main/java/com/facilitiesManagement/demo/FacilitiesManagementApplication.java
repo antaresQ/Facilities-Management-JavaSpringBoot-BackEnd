@@ -21,7 +21,7 @@ public class FacilitiesManagementApplication {
 	@GetMapping("/test")
 	public String testPage() {
 
-		System.out.println(env.getProperty("Facilities_Management_MongoDB_Uri"));
+		System.out.println(env.getProperty("MONGO_CLUSTER"));
 		
 		return "test page";
 	}
