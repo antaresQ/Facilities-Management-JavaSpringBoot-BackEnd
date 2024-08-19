@@ -1,6 +1,7 @@
 package com.facilitiesManagement.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.Environment;
@@ -13,6 +14,9 @@ public class FacilitiesManagementApplication {
 	
 	@Autowired
     private Environment env;
+	
+	@Value("${spring.data.mongodb.uri}")
+	private String mongoDbUri;
 
 	public static void main(String[] args) {
 		SpringApplication.run(FacilitiesManagementApplication.class, args);
@@ -21,7 +25,7 @@ public class FacilitiesManagementApplication {
 	@GetMapping("/test")
 	public String testPage() {
 
-		System.out.println(env.getProperty("MONGO_CLUSTER"));
+		System.out.println(mongoDbUri);
 		
 		return "test page";
 	}
