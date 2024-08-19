@@ -26,6 +26,7 @@ public class FacilitiesManagementApplication {
 	public String testPage() {
 
 		System.out.println(mongoDbUri);
+		System.out.println(env.getProperty("MONGO_DATABASE"));
 		
 		return "test page";
 	}
