@@ -5,6 +5,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -18,6 +19,21 @@ public class Room {
 	@Id
 	private ObjectId id;
 	
-	public String name;
+	private String name;
 	
+	private RoomType roomType;
+
+	private Integer teacherDesks;
+	
+	private Integer teacherChairs;
+	
+	private Integer tabletChairs;
+	
+	private Integer stackedTabletChairs;
+	
+	private Integer desks;
+	
+	private Integer chairs;
+	
+	private Integer stackedChairs;
 }
