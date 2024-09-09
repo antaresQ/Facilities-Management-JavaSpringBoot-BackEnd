@@ -22,6 +22,10 @@ public class Room {
 	private String name;
 	
 	private RoomType roomType;
+	
+	private String imageUrl;
+	
+	private String videoUrl;
 
 	private Integer teacherDesks;
 	
