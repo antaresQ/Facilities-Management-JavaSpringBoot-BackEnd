@@ -10,7 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 
-@Document(collection = "rooms")
+@Document(collection = "Rooms")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

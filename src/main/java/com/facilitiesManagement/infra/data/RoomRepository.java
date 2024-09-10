@@ -1,4 +1,4 @@
-package com.facilitiesManagement.infra.Data;
+package com.facilitiesManagement.infra.data;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -9,6 +9,6 @@ import com.facilitiesManagement.core.domain.Room;
 
 
 @Repository	
-public interface RoomRepositotry extends MongoRepository<Room, ObjectId>{
+public interface RoomRepository extends MongoRepository<Room, ObjectId>{
 
 }
